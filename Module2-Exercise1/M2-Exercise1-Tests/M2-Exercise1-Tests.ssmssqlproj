@@ -2,7 +2,20 @@
 <SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="M2-Exercise1-Tests">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
-      <Items />
+      <Items>
+        <ConnectionNode Name="vaim1-dbt-169\kapong:AIMCO\kapo.ng">
+          <Created>2021-04-19T19:46:07.2606854-06:00</Created>
+          <Type>SQL</Type>
+          <Server>vaim1-dbt-169\kapong</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>Module2DemoDb</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
@@ -12,9 +25,15 @@
           <AssociatedConnUserName />
           <FullPath>build.sql</FullPath>
         </FileNode>
+        <FileNode Name="LostAndFound_CalculateHandling_Tests.class.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vaim1-dbt-169\kapong:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vaim1-dbt-169\kapong</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>LostAndFound_CalculateHandling_Tests.class.sql</FullPath>
+        </FileNode>
         <FileNode Name="LostAndFound_CalculateShipping_Tests.class.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:vaim1-dbt-169\kapong:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>vaim1-dbt-169\kapong</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>LostAndFound_CalculateShipping_Tests.class.sql</FullPath>
         </FileNode>

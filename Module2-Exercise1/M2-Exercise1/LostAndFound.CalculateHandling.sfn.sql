@@ -1,0 +1,9 @@
+CREATE FUNCTION LostAndFound.CalculateHandling(@RewardsBalance INTEGER)
+RETURNS INTEGER
+AS
+BEGIN
+	IF (@RewardsBalance > 10000)
+		RETURN 0
+	RETURN 37
+END
+GO
