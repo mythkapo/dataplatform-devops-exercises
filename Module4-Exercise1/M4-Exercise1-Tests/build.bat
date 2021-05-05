@@ -2,7 +2,7 @@
 pushd "%~dp0"
 
 echo - Installing Projects ------------------------------------------------
-call "%~dp0\..\M2-Exercise1\build.bat" "%~1" "%~2" "%~3"
+call "%~dp0\..\M4-Exercise1\build.bat" "%~1" "%~2" "%~3"
 echo.
 
 echo - Installing tSQLt ------------------------------------------------
@@ -16,7 +16,8 @@ type temp\installalltests.sql
 echo.
 
 echo - Deploying tests --------------------------------------------------------
-"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3"
+"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3" -b
 echo.
 
 popd
+
